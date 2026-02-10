@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TAC Asesorías Visas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0A2342;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:700;
+font-size:20px;
+}
+
+.logo img{
+width:50px;
+border-radius:50%;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#CBA135;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+background:linear-gradient(rgba(10,35,66,.85), rgba(10,35,66,.9)),
+url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070");
+background-size:cover;
+color:white;
+padding:20px;
+}
+
+.hero img{
+width:130px;
+margin-bottom:20px;
+border-radius:50%;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:650px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#CBA135;
+color:#0A2342;
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* TRUST */
+
+.trust{
+display:flex;
+justify-content:center;
+gap:80px;
+padding:60px 20px;
+background:white;
+flex-wrap:wrap;
+}
+
+.trust div{
+text-align:center;
+font-weight:600;
+}
+
+/* SERVICES */
+
+.services{
+padding:90px 8%;
+text-align:center;
+}
+
+.cards{
+margin-top:50px;
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:35px;
+width:300px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* AGENDA */
+
+.agenda{
+background:#0A2342;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+form{
+margin-top:40px;
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin-inline:auto;
+}
+
+input, select{
+padding:14px;
+border-radius:8px;
+border:none;
+}
+
+button{
+background:#CBA135;
+color:#0A2342;
+border:none;
+padding:14px;
+border-radius:10px;
+font-weight:700;
+cursor:pointer;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 20px;
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:16px 22px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+footer{
+background:#0A2342;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">
+<img src="logo.png">
+TAC Asesorías Visas
+</div>
+
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#agenda">Agenda</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<img src="logo.png">
+
+<h1>Expertos en Visas y Procesos Migratorios</h1>
+
+<p>
+Aumenta tus probabilidades de aprobación con asesoría profesional,
+segura y confiable.
+</p>
+
+<a href="#agenda" class="btn">Agendar Asesoría</a>
+
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+
+<div>✔ Asesoría 100% confiable</div>
+<div>✔ Alta tasa de aprobación</div>
+<div>✔ Atención personalizada</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Trámite de Visa Americana</h3>
+<p>Te guiamos paso a paso para evitar errores y aumentar tu probabilidad de aprobación.</p>
+</div>
+
+<div class="card">
+<h3>Trámite de Visa Canadiense</h3>
+<p>Te acompañamos en todo el proceso para que tu solicitud sea clara, completa y con mayores posibilidades de aprobación.</p>
+</div>
+
+<div class="card">
+<h3>Trámite de Visa Japón</h3>
+<p>Brindamos asesoría especializada para preparar tu solicitud correctamente y facilitar tu viaje a Japón sin contratiempos.</p>
+</div>
+
+<div class="card">
+<h3>Trámite de Visa UK</h3>
+<p>Nos encargamos de orientarte en cada detalle para que presentes una aplicación sólida y confiable.</p>
+</div>
+
+<div class="card">
+<h3>Asesoria Migratoria</h3>
+<p>Recibe orientación profesional para tomar decisiones seguras y planificar tu proceso migratorio con confianza.</p>
+</div>
+
+<div class="card">
+<h3>Renovación de Visa</h3>
+<p>tu renovación de manera ágil y organizada para que continúes viajando sin preocupaciones.</p>
+</div>
+
+<div class="card">
+<h3>Trámite de pasaportes</h3>
+<p>Asesoría completa para expedición o renovación sin complicaciones.</p>
+</div>
+
+</div>
+</section>
+
+<!-- AGENDA -->
+<section class="agenda" id="agenda">
+
+<h2>Agenda tu Asesoría</h2>
+
+<p>Déjanos tus datos y te contactaremos en minutos.</p>
+
+<form onsubmit="enviar(event)">
+
+<input id="nombre" placeholder="Nombre completo" required>
+<input id="correo" placeholder="Correo electrónico" required>
+<input id="telefono" placeholder="WhatsApp" required>
+
+<select id="servicio">
+    
+<option>Trámite de Visa Americana</option>
+<option>Trámite de Visa Canadiense</option>
+<option>Trámite de Visa Japón</option>
+<option>Trámite de Visa UK</option>
+<option>Asesoria Migratoria</option>
+<option>Renovación de Visa</option>
+<option>Tramite de Pasaporte</option>
+</select>
+
+<button>Enviar Solicitud</button>
+
+</form>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>📍 Bogotá, Colombia</p>
+<p>📧 Correo: juandavidzamora167@Gmail.com</p>
+<p>📱 +57 3213291721</p>
+
+</section>
+
+<footer>
+© 2026 TAC Asesorías Visas — Todos los derechos reservados
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/573213291721?text=Hola,%20quiero%20asesoría%20de%20visa">
+WhatsApp
+</a>
+
+<script>
+
+function enviar(e){
+
+e.preventDefault();
+
+let nombre=document.getElementById("nombre").value;
+let servicio=document.getElementById("servicio").value;
+
+let mensaje=`Hola, soy ${nombre} y quiero información sobre ${servicio}`;
+
+window.open(`https://wa.me/573213291721?text=${encodeURIComponent(mensaje)}`);
+
+}
+</script>
+
+</body>
+</html>
